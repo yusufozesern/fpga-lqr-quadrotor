@@ -1,0 +1,6 @@
+slprj/
+*.slxc
+*.aux
+*.log
+*.out
+*.synctex.gz

@@ -1,0 +1,66 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Wed May 27 18:17:13 2026
+| Host         : MetalGear running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file C:/Users/yusuf/OneDrive/Desktop/fpga_veriler/utilization_hierarchical.txt
+| Design       : LQR_Subsystem_fil
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------------------------+---------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                  Instance                  |                    Module                   | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------------------------+---------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| LQR_Subsystem_fil                          |                                       (top) |        929 |        922 |       0 |    7 | 1229 |      5 |      1 |          8 |
+|   (LQR_Subsystem_fil)                      |                                       (top) |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|   u_jtag_mac                               |                                    jtag_mac |        391 |        384 |       0 |    7 |  777 |      2 |      1 |          0 |
+|     (u_jtag_mac)                           |                                    jtag_mac |        155 |        155 |       0 |    0 |  239 |      0 |      0 |          0 |
+|     u_post_chif_fifo                       |                       jtag_mac_fifo_wrapper |        113 |        111 |       0 |    2 |  227 |      1 |      0 |          0 |
+|       u_jtag_mac_fifo                      |                               jtag_mac_fifo |         93 |         91 |       0 |    2 |  227 |      1 |      0 |          0 |
+|         U0                                 |       jtag_mac_fifo_fifo_generator_v13_2_14 |         93 |         91 |       0 |    2 |  227 |      1 |      0 |          0 |
+|           inst_fifo_gen                    | jtag_mac_fifo_fifo_generator_v13_2_14_synth |         93 |         91 |       0 |    2 |  227 |      1 |      0 |          0 |
+|             gconvfifo.rf                   |            jtag_mac_fifo_fifo_generator_top |         93 |         91 |       0 |    2 |  227 |      1 |      0 |          0 |
+|               grf.rf                       |        jtag_mac_fifo_fifo_generator_ramfifo |         93 |         91 |       0 |    2 |  227 |      1 |      0 |          0 |
+|                 gntv_or_sync_fifo.gcx.clkx |                   jtag_mac_fifo_clk_x_pntrs |         46 |         46 |       0 |    0 |   96 |      0 |      0 |          0 |
+|                 gntv_or_sync_fifo.gl0.wr   |                      jtag_mac_fifo_wr_logic |         21 |         21 |       0 |    0 |   51 |      0 |      0 |          0 |
+|     u_pre_chif_fifo                        |            jtag_mac_fifo_wrapper__xdcDup__1 |         82 |         80 |       0 |    2 |  215 |      1 |      0 |          0 |
+|       u_jtag_mac_fifo                      |                               jtag_mac_fifo |         81 |         79 |       0 |    2 |  215 |      1 |      0 |          0 |
+|         U0                                 |       jtag_mac_fifo_fifo_generator_v13_2_14 |         81 |         79 |       0 |    2 |  215 |      1 |      0 |          0 |
+|           inst_fifo_gen                    | jtag_mac_fifo_fifo_generator_v13_2_14_synth |         81 |         79 |       0 |    2 |  215 |      1 |      0 |          0 |
+|             gconvfifo.rf                   |            jtag_mac_fifo_fifo_generator_top |         81 |         79 |       0 |    2 |  215 |      1 |      0 |          0 |
+|               grf.rf                       |        jtag_mac_fifo_fifo_generator_ramfifo |         81 |         79 |       0 |    2 |  215 |      1 |      0 |          0 |
+|                 gntv_or_sync_fifo.gcx.clkx |                   jtag_mac_fifo_clk_x_pntrs |         34 |         34 |       0 |    0 |   96 |      0 |      0 |          0 |
+|                 gntv_or_sync_fifo.gl0.wr   |                      jtag_mac_fifo_wr_logic |         21 |         21 |       0 |    0 |   51 |      0 |      0 |          0 |
+|     u_simcycle_fifo                        |                       simcycle_fifo_wrapper |         42 |         39 |       0 |    3 |   96 |      0 |      1 |          0 |
+|       u_simcycle_fifo                      |                               simcycle_fifo |         40 |         37 |       0 |    3 |   96 |      0 |      1 |          0 |
+|         U0                                 |       simcycle_fifo_fifo_generator_v13_2_14 |         40 |         37 |       0 |    3 |   96 |      0 |      1 |          0 |
+|           inst_fifo_gen                    | simcycle_fifo_fifo_generator_v13_2_14_synth |         40 |         37 |       0 |    3 |   96 |      0 |      1 |          0 |
+|             gconvfifo.rf                   |            simcycle_fifo_fifo_generator_top |         40 |         37 |       0 |    3 |   96 |      0 |      1 |          0 |
+|               grf.rf                       |        simcycle_fifo_fifo_generator_ramfifo |         40 |         37 |       0 |    3 |   96 |      0 |      1 |          0 |
+|   u_mwfil_chiftop                          |                               mwfil_chiftop |        540 |        540 |       0 |    0 |  452 |      3 |      0 |          8 |
+|     u_dut                                  |                       LQR_Subsystem_wrapper |         64 |         64 |       0 |    0 |    0 |      0 |      0 |          8 |
+|       u_LQR_Subsystem                      |                               LQR_Subsystem |         64 |         64 |       0 |    0 |    0 |      0 |      0 |          8 |
+|     u_mwfil_chifcore                       |                              mwfil_chifcore |        476 |        476 |       0 |    0 |  452 |      3 |      0 |          0 |
+|       CHIF2DUT.u_b2dfifo                   |                                mwfil_udfifo |        267 |        267 |       0 |    0 |  151 |      2 |      0 |          0 |
+|         (CHIF2DUT.u_b2dfifo)               |                                mwfil_udfifo |         11 |         11 |       0 |    0 |  151 |      0 |      0 |          0 |
+|         u_dpscram                          |                               mwfil_dpscram |        256 |        256 |       0 |    0 |    0 |      2 |      0 |          0 |
+|       CHIF2DUT.u_bus2dut                   |                               mwfil_bus2dut |         13 |         13 |       0 |    0 |  130 |      0 |      0 |          0 |
+|       DUT2CHIF.u_d2bfifo                   |                mwfil_udfifo__parameterized1 |        139 |        139 |       0 |    0 |   76 |      1 |      0 |          0 |
+|         (DUT2CHIF.u_d2bfifo)               |                mwfil_udfifo__parameterized1 |         12 |         12 |       0 |    0 |   76 |      0 |      0 |          0 |
+|         u_dpscram                          |               mwfil_dpscram__parameterized1 |        128 |        128 |       0 |    0 |    0 |      1 |      0 |          0 |
+|       DUT2CHIF.u_dut2bus                   |                               mwfil_dut2bus |         15 |         15 |       0 |    0 |   78 |      0 |      0 |          0 |
++--------------------------------------------+---------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
